@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackHawk</title>
+    <!-- USER CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" integrity="sha512-h9FcoyWjHcOcmEVkxOfTLnmZFWIH0iZhZT1H2TbOq55xssQGEJHEaIm+PgoUaZbRvQTNTluNOEfb1ZRy6D3BOw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+      <!-- 1.Navbar -->
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-1 naving">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img src="/images/logo.png" alt="" class="bi me-2" width="40" height="32">
+          <span class="fs-4 c-left" style="font-family: Bradley Hand, cursive;">TrackHawk</span>
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item c-top"><a href="/" class="nav-link">Home</a></li>
+          <li class="nav-item c-top"><a href="/contact" class="nav-link">Help</a></li>
+        </ul>
+      </header>
+    </div>
+    
+
+    <!-- 2.About Trackhawk -->
+    <div class="container p-2 justify-content-center text-center d-flex w-100 h-100 flex-column bg-img c-top">
+      <main class="inner c-left">
+        <h1 class="cover-heading"><span style="color: rgb(235, 153, 0);">T</span>rack<span style="color: rgb(0, 0, 192);">H</span>awk</h1>
+        <p class="lead px-5">Welcome to TrackMaster, the premier solution for all your web tracking needs. Designed for businesses, marketers, and individuals alike, TrackMaster offers powerful tools to monitor website performance, user behavior, and online trends..</p>
+        <p class="lead">
+          <a href="#work" class="btn btn-lg btn-warning">Let's Go</a>
+        </p>
+      </main>
+    </div>
+
+
+
+    <!-- 2.Working Area -->
+    <h1 class="container p-2 my-5 heading c-left">Track Your Location</h1>
+    <div class="box container p-2 my-5 w-100 h-80 c-right" id="work">
+      <div id="map">
+        <div class="container d-flex">
+          <div class="leaflet-control search">
+            <input type="text" placeholder="Latitude,Longitude">
+            <button id="search-btn"><img src="/images/find.png" alt="find"></button>
+          </div>
+        </div>
+        </div>
+    </div>
+
+
+  
+      <!-- 4.Services Sections -->
+      <h1 class="container p-2 my-3 heading c-left">Services</h1>
+      <div class="container px-4" id="custom-cards">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col c-left">
+            <div class="card info card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url(../images/earth.jpg);">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Real-Time Analytics</h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="/images/logo.png" alt="TrackHawk" width="32" height="32" class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <h5>Earth</h5>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col c-top">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url(../images/india.jpg);">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Visitor Insights</h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="/images/logo.png" alt="TrackHawk" width="32" height="32" class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <h5>India</h5>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col c-right">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url(../images/london.jpg); ">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Event Tracking</h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="/images/logo.png" alt="TrackHawk" width="32" height="32" class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <h5>London</h5>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- 3.Contact section -->
+    <h1 class="container p-2 my-4 heading c-left">Contact Us</h1>
+    <div class="container p-2 col-xxl-9 px-2 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="/images/bg.jpg" class="d-block mx-lg-auto img-fluid rounded c-right abt-img" alt="Image" width="70%">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 c-left">TrackHawk - Your Invisible Assistant!</h1>
+          <p class="lead c-bottom">Discover the magic of seamless web experiences with our Web Tracker. It’s a tiny, invisible pixel that works behind the scenes to understand your preferences and enhance your online journey. No fuss, just pure browsing bliss!</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-info btn-lg c-left"><a href="/contact" class="nav-link">Contact</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4.Footer -->
+    <footer class="d-flex flex-column text-center" style="background-color: rgb(227, 229, 187);">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4 d-flex flex-wrap justify-content-center gap-3 ">
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/rohan.saha.7106670" target="_blank" class="fa fa-facebook hover-style c-left"></a>
+          <!-- Twitter -->
+          <a href="#" target="_blank" class="fa fa-twitter hover-style c-left"></a>
+    
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/roh_an727" target="_blank" class="fa fa-instagram hover-style c-bottom"></a>
+    
+          <!-- Linkedin -->
+          <a href="https://www.linkedin.com/in/rohan-saha-646a26243/" target="_blank" class="fa fa-linkedin hover-style c-right"></a>
+          <!-- Github -->
+          <a href="https://www.github.com/Roh727an" target="_blank" class="fa fa-github hover-style c-right"></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-2" style="background-color: rgb(207, 208, 169); font-size: 1.1rem; font-family: cursive;">
+        © 2024 Copyright:
+        <a class="text-body" href="https://www.linkedin.com/in/rohan-saha-646a26243/" target="_blank">Rohan Saha</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+
+    <!-- JAVA SCRIPTS -->
+    <!-- BootStrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--Leaflet JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" integrity="sha512-puJW3E/qXDqYp9IfhAI54BJEaWIfloJ7JWs7OeD5i6ruC9JZL1gERT1wjtwXFlh7CjE7ZJ+/vcRZRkIYIb6p4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Socket.io -->
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
+    <!-- scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- User Script -->
+    <script src="/js/script.js"></script>
+    <script src="/js/script2.js"></script>
+</body>
+</html>

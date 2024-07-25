@@ -1,0 +1,230 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Bradley Hand, cursive;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(254, 253, 238);
+  background: linear-gradient(109.6deg, #d3fdd9 11.2%, rgb(255, 244, 188) 100.2%);
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+
+
+.box {
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(212, 208, 159);
+  display: flex;
+  margin: 5px;
+
+}
+
+
+.naving {
+  border-bottom: 1px solid rgb(171, 170, 162);
+}
+
+.nav-item a {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 2px;
+  border: 1px solid rgb(124, 207, 0);
+  background-color: rgb(191, 245, 191);
+
+}
+
+.nav-item a:hover {
+  color: purple;
+}
+
+.bg-img {
+  background-image: url(../images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.inner p {
+  font-size: 1.3rem;
+  color: whitesmoke;
+}
+
+.inner h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+}
+
+.heading {
+  font-size: 3rem;
+  border-bottom: 1px solid rgb(52, 98, 0);
+}
+
+
+/* Services Style */
+.card {
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size:cover;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  transform: translateY(20px);
+  cursor:pointer;
+}
+
+.card:hover:before {
+  opacity: 1;
+}
+
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+
+
+.search {
+  position: absolute;
+  top: 10px;
+  left: 100px;
+}
+
+#search-btn img{
+  width: 20px;
+  height: 20px;
+}
+#search-btn img:hover{
+  background-color: rgb(197, 178, 38);
+}
+
+
+
+
+/* Footer Style */
+.fa {
+  padding: 15px;
+  font-size: 25px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.hover-style:hover {
+  background-color: rgb(142, 145, 54);
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Google */
+.fa-google {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+/* instagram */
+.fa-instagram {
+  background: rgb(239, 154, 237);
+  ;
+  color: rgb(255, 255, 255);
+}
+
+/* linkedin */
+.fa-linkedin {
+  background: rgb(83, 89, 255);
+  ;
+  color: rgb(255, 255, 255);
+}
+
+/* github */
+.fa-github {
+  background: rgb(0, 0, 0);
+  ;
+  color: rgb(255, 255, 255);
+}
+
+
+.abt-img:hover{
+  border-radius: 5%;
+  animation: floatImage 4s ease-in-out infinite;
+  cursor: pointer;
+}
+
+@keyframes floatImage {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-2.4rem);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
+
+
+/* Scrollbar */
+html::-webkit-scrollbar {
+    width: 5px;
+  }
+   
+  html::-webkit-scrollbar-track {
+    background: rgb(66, 71, 28);
+    box-shadow: inset 0 0 6px rgb(202, 255, 10);
+  }
+   
+  html::-webkit-scrollbar-thumb {
+    background: rgb(144, 0, 255);
+    height: 5px;
+    
+  }
